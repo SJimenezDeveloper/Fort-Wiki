@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">FortUJI</string>
+    <string-array name="search_options">
+        <item>Name</item>
+        <item>Description</item>
+        <item>ID</item>
+    </string-array>
+</resources>

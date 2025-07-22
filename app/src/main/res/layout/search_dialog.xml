@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/dialogScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Imagen principal del cosmético -->
+        <ImageView
+            android:id="@+id/imageImageView"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- TextView para el ID -->
+        <TextView
+            android:id="@+id/idTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="ID"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/imageImageView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <!-- TextView para el nombre -->
+        <TextView
+            android:id="@+id/nameTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            app:layout_constraintTop_toBottomOf="@id/idTextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="4dp" />
+
+        <!-- TextView para el tipo -->
+        <TextView
+            android:id="@+id/typeTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Type"
+            app:layout_constraintTop_toBottomOf="@id/nameTextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="4dp" />
+
+        <!-- TextView para la rareza -->
+        <TextView
+            android:id="@+id/rarityTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Rarity"
+            app:layout_constraintTop_toBottomOf="@id/typeTextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="4dp" />
+
+        <!-- TextView para la fecha de añadido -->
+        <TextView
+            android:id="@+id/addedTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Added"
+            app:layout_constraintTop_toBottomOf="@id/rarityTextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="4dp" />
+
+        <!-- TextView para la descripción -->
+        <TextView
+            android:id="@+id/descriptionTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            app:layout_constraintTop_toBottomOf="@id/addedTextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="4dp" />
+
+        <!-- Botón para mostrar imágenes -->
+        <Button
+            android:id="@+id/imagesButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Images"
+            app:layout_constraintTop_toBottomOf="@id/descriptionTextView"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <!-- Botón para mostrar video -->
+        <Button
+            android:id="@+id/videoButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Video"
+            app:layout_constraintTop_toBottomOf="@id/descriptionTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <!-- Opcional: Guideline vertical para dividir la zona de botones -->
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineVertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

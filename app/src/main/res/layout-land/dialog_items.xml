@@ -1,0 +1,42 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/news"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding = "16dp">
+
+    <ImageView
+        android:id="@+id/newsDialogImageView"
+        android:layout_width="248dp"
+        android:layout_height="158dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newsTitleTextView"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/newsTitleTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/newsBodyTextView"
+        android:layout_width="301dp"
+        android:layout_height="169dp"
+        android:layout_marginStart="40dp"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/newsDialogImageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/newsDialogImageView"
+        app:layout_constraintTop_toTopOf="@+id/newsDialogImageView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dialogScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Imagen principal del cosmético -->
+        <ImageView
+            android:id="@+id/imageImageView"
+            android:layout_width="241dp"
+            android:layout_height="379dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- TextView para el ID -->
+        <TextView
+            android:id="@+id/idTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="ID"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageImageView"
+            app:layout_constraintTop_toTopOf="@+id/imageImageView" />
+
+        <!-- TextView para el nombre -->
+        <TextView
+            android:id="@+id/nameTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="4dp"
+            android:text="Name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageImageView"
+            app:layout_constraintTop_toBottomOf="@id/idTextView" />
+
+        <!-- TextView para el tipo -->
+        <TextView
+            android:id="@+id/typeTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="4dp"
+            android:text="Type"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageImageView"
+            app:layout_constraintTop_toBottomOf="@id/nameTextView" />
+
+        <!-- TextView para la rareza -->
+        <TextView
+            android:id="@+id/rarityTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="4dp"
+            android:text="Rarity"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageImageView"
+            app:layout_constraintTop_toBottomOf="@id/typeTextView" />
+
+        <!-- TextView para la fecha de añadido -->
+        <TextView
+            android:id="@+id/addedTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="4dp"
+            android:text="Added"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageImageView"
+            app:layout_constraintTop_toBottomOf="@id/rarityTextView" />
+
+        <!-- TextView para la descripción -->
+        <TextView
+            android:id="@+id/descriptionTextView"
+            android:layout_width="319dp"
+            android:layout_height="111dp"
+            android:layout_marginTop="20dp"
+            android:text="Description"
+            app:layout_constraintStart_toStartOf="@+id/addedTextView"
+            app:layout_constraintTop_toBottomOf="@+id/addedTextView" />
+
+        <!-- Botón para mostrar imágenes -->
+
+        <!-- Botón para mostrar video -->
+        <Button
+            android:id="@+id/imagesButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="76dp"
+            android:layout_marginTop="20dp"
+            android:text="Images"
+            app:layout_constraintStart_toEndOf="@+id/imageImageView"
+            app:layout_constraintTop_toBottomOf="@+id/descriptionTextView" />
+
+        <Button
+            android:id="@+id/videoButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Video"
+            app:layout_constraintBottom_toBottomOf="@+id/imagesButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imagesButton"
+            app:layout_constraintTop_toTopOf="@+id/imagesButton" />
+
+        <!-- Opcional: Guideline vertical para dividir la zona de botones -->
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineVertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
