@@ -1,7 +1,7 @@
 # 🎮 Fort-Wiki – Tu app de Fortnite para Android
 
 <div align="center">
-  <img src="images/fortuji_logo.png" alt="FortUJI Logo" width="120"/>
+  <img src="https://www.citypng.com/public/uploads/preview/hd-golden-gold-fortnite-logo-silhouette-png-701751694787369wgk8zm36xu.png" alt="FortUJI Logo" width="180"/>
 </div>
 
 [![Android](https://img.shields.io/badge/Android-Kotlin-blue?logo=android)](https://developer.android.com/)
@@ -15,8 +15,8 @@
 **Fort-Wiki** es una app Android para consultar y buscar información sobre cosméticos y novedades del universo Fortnite, creada como proyecto de aprendizaje y desarrollo avanzado en Kotlin.
 
 <div align="center">
-  <img src="images/app_screenshot1.gif" alt="Demo Fort-Wiki" width="250"/>
-  <p><i>GIF/Captura: Búsqueda de skins en acción</i></p>
+  <img src="https://media.giphy.com/media/3ohs4tM0Qn2OQMqLKM/giphy.gif" alt="Demo Fort-Wiki" width="250"/>
+  <p><i>GIF/Captura de ejemplo: Búsqueda de skins en acción</i></p>
 </div>
 
 ---
@@ -35,17 +35,29 @@
 ## 🏗️ Arquitectura del proyecto
 
 FortUJI/
+
 │
+
 ├── app/
+
 │ ├── src/
+
 │ │ ├── main/
+
 │ │ │ ├── java/
+
 │ │ │ │ └── ... (ViewModels, Activities, Repos)
+
 │ │ │ └── res/
+
 │ │ │ └── layout/
+
 │ │ └── test/
+
 │ ├── build.gradle
+
 ├── .gitignore
+
 ├── README.md
 
 ---
@@ -62,9 +74,7 @@ FortUJI/
 
 4. **Ejecuta en un emulador o dispositivo Android.**
 
-## 📸 Capturas de pantalla
-<div align="center"> <img src="images/app_screenshot2.png" width="200"/> <img src="images/app_screenshot3.png" width="200"/> <p><i>Pantallas de búsqueda y detalles</i></p> </div>
-👨‍💻 Tecnologías y librerías usadas
+##👨‍💻 Tecnologías y librerías usadas
 Kotlin
 
 Android Jetpack (ViewModel, LiveData, RecyclerView)
